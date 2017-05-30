@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='wildNoteApp'>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/index.css">
 </head>
+
 <body>
     <header></header>
     <ui-view></ui-view>
+    <home></home>
+
 
     <script src="/node_modules/angular/angular.min.js"></script>
-    <!--<script src="/node_modules/angular-resource/angular-resource.min.js"></script>
+    <script src="/node_modules/angular-resource/angular-resource.min.js"></script>
     <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>-->
+
     <script src="/app/app.js"></script>
     <script src="/app/components/home/home.js"></script>
+    <script src="/app/components/header/header.js"></script>
+
+
 </body>
+
 </html>

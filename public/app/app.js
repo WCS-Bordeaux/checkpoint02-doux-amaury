@@ -2,23 +2,28 @@
 
 const config = [
     "$stateProvider",
-    "$urlRouteProvider",
+    "$urlRouterProvider",
     Config
 ]
 
-angular
-    
-    .module('wildNoteApp', [
-        "ui.router"
+
+
+angular.module('wildNoteApp', [
+        "ui.router",
+        "ngResource"
+
     ])
 
     .config(config)
+
+
+
 
     // .factory("Hey", function() {
     //     return {getConseil: () => "utilise les factory pour créer ta ressource !"}
     // })
 
-function Config($stateProvider, $urlRouteProvider) {
+function Config($stateProvider, $urlRouterProvider) {
     const states = [
         {
             name: "home",

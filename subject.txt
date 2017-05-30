@@ -138,17 +138,36 @@ qui seront affichés avec une boucle dans le template du component attaché à c
 Sinon tu peux aussi répondre en dessous de chaque question.
 
 a) Pourquoi utiliser $resource dans angular plutôt que $http ?
+    $resoures est utilisé a la place de http parce que il contients en lui meme tout les protocols      necessaire pour envoyer des requetes au server. il est plus facile a utiliser que $http.
+
 b) C'est quoi la différence entre front-end et back-end en fait ?
+    le front end est la partie public, ce qui est presque tout visible par les clients. le back end est la partie coté serveur qui n est pas visible au clients.
+
 c) Pourquoi je peux pas utiliser document.getElementById dans NodeJS ?
+    
 d) Pourquoi c'est très grave d'utiliser document.getElementById dans AngularJS ?
+    parceque angular le fais automatiquement.
+
 e) C'est quoi la différence entre NodeJS et Javascript ?
+    nodeJS permet de coder coté serveur malgre que ce soit aussi du javascript nodeJS permet de faire des chose en plus nottament les requettes et la creation de serveurs
+
 f) En quoi c'est utile d'utiliser npm ?
+    le npm est un package manager, il est utile car on l utilise pour facilement installer des packeges pour creer notre site ou application. 
+
 g) A quoi ça sert une base de donnée ? Et mongoDB ?
+    une base de donné est un espace alloué dans un serveur ou l on peut y stocker des information. mongoDB est specialisé dand les base de donné sous forme de JSON et collections non pas des tables et est tres performant pour stocker des million de donné tres rapidement.
+
 h) Est-il possible de faire des relations entre plusieurs collections ? Est-ce une bonne pratique ?
+    il est posssible de faire des connections entre plusieurs collections tant qu il y en a pas enormement.
+
 i) C'est quoi un document dans mongoDB ? et une collection au final ?
+    un document est un JSON, et une collection c est plein de JSON qui form une base de donné.
+
 j) Quelle serai la requête qui me permettrai d'aller chercher dans 
     ma db "toto" dans la collection "tata" l'utilisateur ayant pour nom "titi" ?
+    
 k) Est-il plus important de sécuriser le client ou le serveur ? Pourquoi ?
+    il est plus important de securiser le serveur plus que le client parceque les information importantes sont stocké sur le serveur
 l) Pourquoi [1, 2, 3, () => "boom"][Number(true) + 2]() === "boom" ? Expliquez le plus précisément possible.
 m) Cite 3 directives angularjs.
 

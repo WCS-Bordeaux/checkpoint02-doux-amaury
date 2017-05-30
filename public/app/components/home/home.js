@@ -3,10 +3,10 @@
 angular.module('wildNoteApp')
 
     .component('home', {
-        url: '/app/components/home/home.html',
+        templateUrl: '/app/components/home/home.html',
         controller: Home
     })
 
 function Home() {
+    
 }
-
