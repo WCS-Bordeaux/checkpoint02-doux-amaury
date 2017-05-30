@@ -1,0 +1,169 @@
+
+
+
+
+ # Lisez entièrement le sujet avant de commencer.
+
+
+
+Nous sommes en l'an 2725.
+
+Vous êtes dans une agence qui développe de gros outils en javascript (parcequ'on aime tryhard sur js à cette époque future).
+
+Dans ce cas-ci, il s'agit d'un dashboard qui va permettre de visualiser proprement les notes "wild" des utilisateurs, 
+ainsi que toutes les informations relative aux utilisateurs.
+
+Votre chef de projet viens de vous donner comme mission de faire complètement fonctionner cette application, et de l'embellir un peu.
+Pour vous aider à accomplir cette tache, il vous donne un petit robot qui va vous missionner une à une les consignes à réaliser.
+
+Pour info:
+
+Des mocks vous sont fournis.
+Une base cliente est partiellement codée.
+
+**
+*** consigne à respecter obligatoirement
+**
+
+ # Vous avez le temps.
+
+ # Organisez-vous.
+
+ # Internet !== Interdit.
+
+Interdiction d'utiliser 
+    - les méthodes de l'objet "document"
+    - XMLHttpRequest
+    - Jquery
+    - et tout ce qui ne rentre pas dans le contexte d’angular.
+
+Vous n'avez pas le droit de modifier l'architecture de la racine du dépot.
+
+Dans le dossier './server', vous pouvez vous organiser comme vous le souhaitez.
+Cependant, il est OBLIGATOIRE de mettre ce qui concerne le serveur, dans le dossier './server'.
+
+Dans le dossier './public', vous pouvez vous organiser comme vous le souhaitez.
+Cependant, il est OBLIGATOIRE de mettre ce qui concerne le client, dans le dossier './public'.
+
+Le dossier public est hors du dossier serveur, c'est volontaire, et doit rester tel quel.
+
+Pour le questionnaire, il faut répondre avec ses mots.
+
+N'oubliez pas de push sur la branche "master".
+
+
+
+
+*****************************************************************************************************
+
+
+
+
+(maintenant le narrateur c'est le robot)
+
+*
+
+**
+
+** PRE ETAPE PROJET **
+
+Debugger
+
+Hello, bon ça ne sent pas bon là, d'après le dernier rapport,
+il y a eu une ruée de Zergling qui à un petit peu mangé le code.
+
+On va réparer ça dans un premier temps sinon on ne va pas aller bien loin !
+Répare donc l'application front-end de sorte à ce que cette vieille turbine de javascript avance.
+
+"Lorsque tu n'aura plus d'erreurs dans la console et que le header et le contenu s'affichiront, tu pourra passer à l'étape suivante"
+
+
+*
+
+**
+
+** ETAPE PROJET **
+
+1) Serveur
+
+Le front-end est sur pied, mais il est seul,
+j'apprend que le projet à été abandonné suite à un excès de colère de l'ancien lead dev.
+
+Apparement, il aurai "pété un cable", la commande a été directe: rm -rf ./server; Aille.
+
+Bon du coup il va falloir faire en sorte que notre client (front-end) soit monté dans un serveur (back-end).
+Créer donc le serveur qui permettra de renvoyer le fichier "index.html" qui se trouve dans le dossier "./public".
+
+"Lorsque notre hôte local répondra sur le port 9000, et que sa route racine affichera la base de notre site web, tu pourra passer à l'étape suivante"
+
+2) API
+
+Le serveur marche, mais bon il n'envoi qu'une page, nous allons faire en sorte qu'il renvoi des données aussi.
+Notre client nous à fourni sa base de donnée d'utilisateurs, avec toutes les notes de chacun d'entre eux.
+
+Il va falloir faire en sorte qu'une route sur notre API renvoi l'ensemble des utilisateurs, avec leurs notes comprises dedans.
+On a de la chance, il y a encore une trace de comment est formée la donnée dans notre home (côté angular).
+
+Il va absolument falloir faire une route "/users" qui va renvoyer les utilisateurs avec toute leurs notes dans leurs objet !
+Je dirais que la liste de note s'appellera "notes" dans l'objet de chacun d'entre eux.
+
+"Lorsque la route répondra l'ensemble des données utilisateurs et notes comprises, tu pourra passer à l'étape suivante"
+
+3) Angular
+
+Maintenant que notre début d'API est en place, nous allons pouvoir la consommer du côté front-end.
+Tu vois le bout de code HTML qui compose un utilisateur et ses notes ? On va en faire un beau component.
+
+Et ce component va consommer des ressources, ça c'est sûr !
+Exceptionnellement tu as le droit de faire ça dans le fichier 'app.js', pour un gain de temps.
+
+Fait en sorte que notre home affiche l'ensemble des utilisateurs, et pour chaque utilisateur sa liste de notes.
+Faire une petite beauté avec du CSS ne fera surement pas de mal non plus.
+
+"Une fois que la liste apparaitra avec les notes, et tu aura terminé la base du cahier des charges".
+
+
+*
+
+**
+
+** ETAPE QUESTIONNAIRE **
+
+En tant que robot, il y a encore chez moi certaine zones d'ombre sur des sujets assez variés.
+J'ai besoin de tes éclairs pour améliorer mes capacités d'analyses.
+
+Ajoute un état "questions" dans ui-router, le controller du component contiendra une liste d'objets avec deux clefs "question" et "response",
+qui seront affichés avec une boucle dans le template du component attaché à cet état.
+
+Sinon tu peux aussi répondre en dessous de chaque question.
+
+a) Pourquoi utiliser $resource dans angular plutôt que $http ?
+b) C'est quoi la différence entre front-end et back-end en fait ?
+c) Pourquoi je peux pas utiliser document.getElementById dans NodeJS ?
+d) Pourquoi c'est très grave d'utiliser document.getElementById dans AngularJS ?
+e) C'est quoi la différence entre NodeJS et Javascript ?
+f) En quoi c'est utile d'utiliser npm ?
+g) A quoi ça sert une base de donnée ? Et mongoDB ?
+h) Est-il possible de faire des relations entre plusieurs collections ? Est-ce une bonne pratique ?
+i) C'est quoi un document dans mongoDB ? et une collection au final ?
+j) Quelle serai la requête qui me permettrai d'aller chercher dans 
+    ma db "toto" dans la collection "tata" l'utilisateur ayant pour nom "titi" ?
+k) Est-il plus important de sécuriser le client ou le serveur ? Pourquoi ?
+l) Pourquoi [1, 2, 3, () => "boom"][Number(true) + 2]() === "boom" ? Expliquez le plus précisément possible.
+m) Cite 3 directives angularjs.
+
+
+
+*
+
+**
+
+** ETAPE BONUS **
+
+Dans cet ordre c'est mieux:
+    - faire un CRUD pour les users.
+    - faire un autre CRUD pour les notes.
+    - faire le CRUD des users + notes côté angular (donc rendre tout editable) qui consomme les deux CRUD.
+    - un ptit coup de CSS ?
+
+

@@ -1,0 +1,12 @@
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper black accent-3">
+            <a ui-sref="home" class="brand-logo"><i class="material-icons">note</i>WildNotes</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li ng-repeat="state in ::$ctrl.states track by $index">
+                    <a ui-sref="{{::state.name}}" ui-sref-active="active">{{::state.displayName}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,54 @@
+{
+    "users": [
+        {
+            "_id": "592ca58a50a91d59912d568a",
+            "name": {
+                "first": "Kristen",
+                "last": "Dillon"
+            },
+            "company": "INTERFIND",
+            "email": "kristen.dillon@interfind.name",
+            "phone": "+1 (906) 483-3623"
+        },
+        {
+            "_id": "592ca58aa042ff23b38c7e2f",
+            "name": {
+                "first": "Deirdre",
+                "last": "Sampson"
+            },
+            "company": "QUANTASIS",
+            "email": "deirdre.sampson@quantasis.ca",
+            "phone": "+1 (875) 481-3565"
+        },
+        {
+            "_id": "592ca58a1f0071e4ef7c501d",
+            "name": {
+                "first": "Snider",
+                "last": "Daugherty"
+            },
+            "company": "CUJO",
+            "email": "snider.daugherty@cujo.biz",
+            "phone": "+1 (994) 439-2740"
+        },
+        {
+            "_id": "592ca58aa47d818d2dc7d24f",
+            "name": {
+                "first": "Georgette",
+                "last": "Cummings"
+            },
+            "company": "ZENOLUX",
+            "email": "georgette.cummings@zenolux.com",
+            "phone": "+1 (808) 568-2011"
+        },
+        {
+            "_id": "592ca58ab3e4b4050c7e9600",
+            "name": {
+                "first": "Aguilar",
+                "last": "Zamora"
+            },
+            "company": "GLOBOIL",
+            "email": "aguilar.zamora@globoil.us",
+            "phone": "+1 (854) 600-2950"
+        }
+    ]
+}

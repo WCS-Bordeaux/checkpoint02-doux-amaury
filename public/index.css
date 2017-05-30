@@ -1,0 +1,18 @@
+
+.bold {
+    font-weight: bold !important;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+  margin-left: 25px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
